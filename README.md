@@ -1,7 +1,3 @@
-```
-# I have used STEPS to create this app
-```
-
 # SetUp
 
     - npx create-react-app
