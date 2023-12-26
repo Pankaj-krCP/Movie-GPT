@@ -6,9 +6,9 @@ import { useEffect } from "react";
 const useNowPlayingMovies = () => {
   const dispatch = useDispatch();
   const getNowPlayingMovie = async () => {
-    const data = await fetch(MOVIE_URL, API_OPTIONS);
+    const now_playing_url = MOVIE_URL + "now_playing?page=1";
+    const data = await fetch(now_playing_url, API_OPTIONS);
     const json = await data.json();
-    console.log(json.results);
     dispatch(addNowPlayingMovies(json.results));
   };
 
