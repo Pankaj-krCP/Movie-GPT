@@ -84,7 +84,7 @@ const Login = () => {
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="w-3/12 h-2/3 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
+        className="w-3/12 h-[75%] absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
       >
         <h1 className="font-bold text-2xl py-2">
           {isSignInForm ? "Sign In" : "Sign Up"}
@@ -110,7 +110,9 @@ const Login = () => {
           placeholder="Password"
           className="p-2 my-2 w-full bg-gray-700 rounded-lg"
         />
-        <p className="text-red-500 font-bold text-lg py-2">{errorMessage}</p>
+        <p className="text-red-600 bg-gray-100 rounded-md font-bold">
+          {errorMessage}
+        </p>
         <button
           className="p-4 my-4 bg-red-700 w-full rounded-lg"
           onClick={handleButtonClick}
