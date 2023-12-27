@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add this CSS to your stylesheet or in your component style tag */
+.scrollbar-container {
+  overflow: scroll;
+  scrollbar-width: thin;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.scrollbar-container::-webkit-scrollbar {
+  width: 6px; /* You can adjust the width as needed */
+  height: 6px; /* You can adjust the height as needed */
+}
+
+.scrollbar-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* You can set the color of the scrollbar thumb */
+}
+
+/* Add this CSS to your global stylesheet or style tag in your HTML */
+html,
+body {
+  overflow: fixed;
+  scrollbar-width: thin;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 6px; /* You can adjust the width as needed */
+  height: 6px; /* You can adjust the height as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* You can set the color of the scrollbar thumb */
+}

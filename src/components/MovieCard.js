@@ -10,7 +10,7 @@ const MovieCard = ({ movieid, posterPath }) => {
   };
   return (
     <div
-      className="w-48 pr-4 pb-2 cursor-pointer transform transition-transform hover:scale-105"
+      className="w-40 md:w-48 pr-4 pb-2 cursor-pointer transform transition-transform hover:scale-105"
       onClick={handleOnclick}
     >
       <img

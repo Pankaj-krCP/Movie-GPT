@@ -15,7 +15,6 @@ const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
   const dispatch = useDispatch();
-
   const name = useRef(null);
   const email = useRef(null);
   const password = useRef(null);
@@ -79,14 +78,18 @@ const Login = () => {
   return (
     <div>
       <Header />
-      <div className="absolute">
-        <img src={BG_URL} alt="logo" />
+      <div className="fixed">
+        <img
+          src={BG_URL}
+          alt="logo"
+          className="h-screen w-screen object-cover"
+        />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="w-3/12 h-[75%] absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
+        className="w-9/12 md:w-3/12 h-[75%] absolute p-12 bg-black my-24 md:my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
       >
-        <h1 className="font-bold text-2xl py-2">
+        <h1 className="font-bold text-xl md:text-2xl py-2">
           {isSignInForm ? "Sign In" : "Sign Up"}
         </h1>
 
@@ -114,7 +117,7 @@ const Login = () => {
           {errorMessage}
         </p>
         <button
-          className="p-4 my-4 bg-red-700 w-full rounded-lg"
+          className="p-2 md:p-4 my-2 md:my-4 bg-red-700 w-full rounded-lg"
           onClick={handleButtonClick}
         >
           {isSignInForm ? "Sign In" : "Sign Up"}

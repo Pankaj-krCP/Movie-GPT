@@ -25,13 +25,13 @@ const PlayingVideo = () => {
     getMovieVideo();
   }, []);
   return (
-    <>
+    <div className="fixed bg-black">
       <div className="text-center">
         <button
-          className="text-3xl absolute pt-12 text-center text-white cursor-pointer"
+          className="opacity-30 text-2xl absolute pt-5 md:pt-12 text-center text-white cursor-pointer"
           onClick={onCloseButtonClick}
         >
-          ❎
+          ✖️
         </button>
       </div>
       <div className="w-screen aspect-video">
@@ -40,9 +40,10 @@ const PlayingVideo = () => {
           src={`https://www.youtube.com/embed/${video?.key}?&autoplay=1`}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
         ></iframe>
       </div>
-    </>
+    </div>
   );
 };
 
