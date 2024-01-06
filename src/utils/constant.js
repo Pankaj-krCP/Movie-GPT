@@ -10,7 +10,7 @@ export const API_OPTIONS = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiNjYyZDJlNzc5NjY4OWFiZGVjZTFlMjZmNjc2MzFjYyIsInN1YiI6IjY1OGE5Y2NkMmRmZmQ4NWJjYzQ2MTRhMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Go3RIRDVJYjQljXpOA3TRY7kHTNugo5ySMt7bFvhwpg",
+      "Bearer YOUR KEY put in .env",
   },
 };
 
@@ -22,4 +22,4 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "rs", name: "Russian" },
 ];
 
-export const OPENAI_KEY = "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";
+export const OPENAI_KEY = "YOUR_KEY put in .env";
