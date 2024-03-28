@@ -10,7 +10,7 @@ export const API_OPTIONS = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer YOUR KEY put in .env",
+      `Bearer ${process.env.API_OPTIONS}`,
   },
 };
 
@@ -22,4 +22,4 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "rs", name: "Russian" },
 ];
 
-export const OPENAI_KEY = "YOUR_KEY put in .env";
+export const OPENAI_KEY = process.env.OPENAI_KEY;
