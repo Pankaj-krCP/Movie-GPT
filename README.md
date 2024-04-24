@@ -1,3 +1,6 @@
+![image](https://github.com/Pankaj-krCP/Movie-GPT/assets/81906340/6e7d831a-326b-4b01-ac3c-bd141fb590c2)
+
+
 # SetUp
 
     - npx create-react-app
